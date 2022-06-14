@@ -68,7 +68,7 @@
 //     current = -1 * num;
 // }
 
-// while(current < num-1){
+// while(current < num - 1){
 //     current++;
 //     Console.Write(current + " ");
 // }
@@ -78,7 +78,7 @@
 // Console.Write("Input N: ");
 // int num = Convert.ToInt32(Console.ReadLine());
     
-// if(num < 1000 || num > 99){
+// if (num > 99 || num < 1000){
 //     Console.WriteLine(num % 10);
 // }
 // else{
