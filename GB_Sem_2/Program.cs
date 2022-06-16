@@ -50,15 +50,32 @@
 //  14.Напишите программу,которая принимает на вход число и проверяет,кратно ли оно одновременно 7 и 23.
 
 
-void Result(int num){
-    if(num % 7 == 0 && num % 23 == 0)
-        Console.WriteLine(num + " кратно 7 и 23");
-    else{
-        Console.WriteLine(num + " не кратно 7 и 23");
-    }
+// void Result(int num){
+//     if(num % 7 == 0 && num % 23 == 0)
+//         Console.WriteLine(num + " кратно 7 и 23");
+//     else{
+//         Console.WriteLine(num + " не кратно 7 и 23");
+//     }
+// }
+
+// Console.Write("Введите целое число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// Result(num);
+
+
+//  16.Напишите программу,которая принимает на вход два числа и проверяет,является ли одно число квадратом другого.
+
+void Square(int num1, int num2){
+    if(num1 == num2 * num2)
+       Console.WriteLine(num1 + " равен квадрату из " + num2);
+    if(num2 == num1 * num1)
+       Console.WriteLine(num2 + " равен квадрату из " + num1);
 }
 
-Console.Write("Введите целое число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
 
-Result(num);
+Square(num1, num2);
