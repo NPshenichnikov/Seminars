@@ -66,16 +66,16 @@
 
 //  16.Напишите программу,которая принимает на вход два числа и проверяет,является ли одно число квадратом другого.
 
-void Square(int num1, int num2){
-    if(num1 == num2 * num2)
-       Console.WriteLine(num1 + " равен квадрату из " + num2);
-    if(num2 == num1 * num1)
-       Console.WriteLine(num2 + " равен квадрату из " + num1);
-}
+// void Square(int num1, int num2){
+//     if(num1 == num2 * num2)
+//        Console.WriteLine(num1 + " равен квадрату из " + num2);
+//     if(num2 == num1 * num1)
+//        Console.WriteLine(num2 + " равен квадрату из " + num1);
+// }
 
-Console.Write("Введите первое число: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите первое число: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
 
-Square(num1, num2);
+// Square(num1, num2);
