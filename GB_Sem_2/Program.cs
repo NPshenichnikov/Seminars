@@ -17,5 +17,11 @@
 
 // 11.Напишите программу,которая выводит случайное трёхзначное число и удаляетвторую цифру этого числа.
 
-void ShowNumber(){
-    int Newnumber = new Random().Next(100,1000);
+int NumberWithoutSecDig(int Number){
+    int NewNumber = 0;
+    NewNumber = Number / 100 * 10 + Number % 10;
+    return NewNumber;
+}
+int Number = new Random().Next(100,1000);
+int a = NumberWithoutSecDig(Number);
+Console.WriteLine(Number + " " + a);
