@@ -34,19 +34,13 @@
       
  //   3. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.   
 
-void Weekend(int day){
-if(day == 6 || day == 7) Console.WriteLine(" Ура!!!Выходной!!! ");
-if(day > 0 && day < 6) Console.WriteLine(" Рабочий день( ");
-if(day < 1 || day > 7) Console.WriteLine(" Некорректное число ");
-}   
+// void Weekend(int day){
+// if(day == 6 || day == 7) Console.WriteLine(" Ура!!!Выходной!!! ");
+// if(day > 0 && day < 6) Console.WriteLine(" Рабочий день( ");
+// if(day < 1 || day > 7) Console.WriteLine(" Некорректное число ");
+// }   
 
-Console.Write("Введите число дня недели: ");
-int day = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число дня недели: ");
+// int day = Convert.ToInt32(Console.ReadLine());
 
-Weekend(day);
-
-
-
-
-
-
+// Weekend(day);

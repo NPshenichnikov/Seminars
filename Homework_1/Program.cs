@@ -49,21 +49,23 @@
 
 // Console.Write("Input N: ");
 // int num = Convert.ToInt32(Console.ReadLine());
-// while (num > 2){
-//     if (num % 2 == 0){
-//         num = num - 2;
-//     }
-//     else {
+
+// while(num > 1){    
+//     if(num % 2 == 0){
+//         Console.WriteLine(num + " ");
 //         num = num - 1;
 //     }
-// Console.WriteLine(num +  " ");    
-// }
-// while (num < 0){
-//     if (num % 2 == 0){
-//         num = num + 2;
+//     else{
+//         num = num - 1;
 //     }
-//     else {
+// }
+
+// while(num < 1){
+//     if(num % 2 == 0){
+//         Console.WriteLine(num + " ");
+//         num = num + 2; 
+//     }
+//     else{
 //         num = num + 1;
 //     }
-// Console.WriteLine(num +  " ");
 // }
