@@ -23,7 +23,7 @@ void Numresult(int num){
     num = num / 10;
     }
     if(num < 100) Console.WriteLine(" Третья цифра отсутствует ");
-    if(num >=100 && num < 1000) Console.WriteLine(" Третья цифра: " + (num = num % 10));
+    if(num > 99 && num < 1000) Console.WriteLine(" Третья цифра: " + (num = num % 10));
 }
 
 Console.Write(" Введите целое число: ");
