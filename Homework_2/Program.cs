@@ -18,18 +18,18 @@
 
 // 2. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-void Numresult(int num){
-    while(num > 999){
-    num = num / 10;
-    }
-    if(num < 100) Console.WriteLine(" Третья цифра отсутствует ");
-    if(num > 99 && num < 1000) Console.WriteLine(" Третья цифра: " + (num = num % 10));
-}
+// void Numresult(int num){
+//     while(num > 999){
+//     num = num / 10;
+//     }
+//     if(num < 100) Console.WriteLine(" Третья цифра отсутствует ");
+//     if(num > 99 && num < 1000) Console.WriteLine(" Третья цифра: " + (num = num % 10));
+// }
 
-Console.Write(" Введите целое число: ");
-int num = Convert.ToInt32(Console.ReadLine());      
+// Console.Write(" Введите целое число: ");
+// int num = Convert.ToInt32(Console.ReadLine());      
 
-Numresult(num);
+// Numresult(num);
 
       
  //   3. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.   
