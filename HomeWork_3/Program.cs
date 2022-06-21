@@ -43,4 +43,29 @@
 // Console.WriteLine("Длина отрезка: " + res);
 
 
+//  Задача 23:Напишите программу,которая принимает на вход число N и выдаёт таблицу кубов чисел от 1 до N(включительно).
 
+// void CubeNumbers(int n){
+
+//     int count = 1;
+
+//     Console.Write(n + " -> ");
+
+//     if (n > 0){
+//         while (count <= n){
+//             Console.Write(Math.Pow(count, 3) + ", ");
+//             count++;
+//         }    
+//     }   
+//     if (n < 2){
+//         while (count >= n){
+//             Console.Write(Math.Pow(count, 3) + ", ");
+//             count--;
+//         }        
+//     }
+// } 
+
+// Console.Write("Введите целое число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// CubeNumbers(number);
