@@ -5,8 +5,11 @@
 // Console.Write("Введите натуральное число B: ");
 // int b = Convert.ToInt32(Console.ReadLine());
 
-// int result = a * a;
-// int count = 3;
+// int result = 1;
+// int count = 1;
+
+// if (a == 0) Console.WriteLine("Ошибка! Число А должно быть неравно 0");
+// if (b <= 0) Console.WriteLine("Ошибка! Число B должно быть больше 0");
 
 // if (b > 0 && a != 0){
 //    while(count <= b){
@@ -16,25 +19,33 @@
 //    Console.WriteLine(" Ответ: " + result );
 // }
 
-// if (a == 0) Console.WriteLine("Ошибка.Число А должно быть неравно 0");
-// if (b <= 0) Console.WriteLine("Ошибка.Число B должно быть больше 0");
-
-
-
-
-
-
-
-
 
 //   Задача 27: Напишите программу,которая принимает на вход число и выдаёт сумму цифр в числе.
 
+// int SumNumber(int num){
 
+//     int result = 0;
+//     int sum = 0;
 
+//     while (num > 0){
+//         result = num % 10;
+//         sum = sum + result;
+//         num = num / 10;
+//     }
+//     return sum;
+// }     
 
+// Console.Write("Введите целое число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-
-
+// Console.Write(SumNumber(number));
 
 
 //  Задача 29: Напишите программу,которая задаёт массив из 8 элементов и выводит их на экран.
+
+// int [] array = {41,0,5,8,3,12,23,7};
+// ShowArray (array[7]);
+
+
+
+
