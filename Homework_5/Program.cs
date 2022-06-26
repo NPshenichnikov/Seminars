@@ -120,3 +120,43 @@
 // ArrayCheck(MyArray);
 // Console.WriteLine(" -> " + (max - min));
 
+
+//  Дополнительно:
+
+//  1. Задайте одномерный массив из 123 случайных чисел. Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
+
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// int[] MyArray = CreateRandomArray(123, 1, 150);
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+// }
+
+// ShowArray(MyArray); 
+
+// int sum = 0; 
+
+// void ArrayCheck(int[] array)
+// {
+//     for (int i = 0; i < MyArray.Length; i++)
+//     {
+//        if(MyArray[i] > 9 && MyArray[i] < 99) sum = sum + 1;
+
+//     }
+// }
+
+// ArrayCheck(MyArray);
+// Console.WriteLine(" -> " + sum);
