@@ -103,50 +103,41 @@
 
 //  Задача 33: Задайте массив.Напишите программу,которая определяет,присутствует ли заданное число в массиве.
 
-int[] CreateRandomArray(int size)
-{
-    int[] array = new int[size];
-    for(int i = 0; i < size; i++){
-        array[i] = new Random().Next(-20,21);
-    }
-    return array;
-}
+// int[] CreateRandomArray(int size)
+// {
+//     int[] array = new int[size];
+//     for(int i = 0; i < size; i++){
+//         array[i] = new Random().Next(-20,21);
+//     }
+//     return array;
+// }
 
-int[] ArrayNum = CreateRandomArray(10);
+// int[] ArrayNum = CreateRandomArray(10);
     
-void ShowArray(int[] array){
+// void ShowArray(int[] array){
     
-    for(int i = 0; i < array.Length; i++){
-        Console.Write(array[i] + " ");
-    }
-}
+//     for(int i = 0; i < array.Length; i++){
+//         Console.Write(array[i] + " ");
+//     }
+// }
 
-ShowArray(ArrayNum);
+// ShowArray(ArrayNum);
 
-Console.Write("Введите искомое число: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int i = 0;
-while
-while (i < ArrayNum.Length){
-      if(num == ArrayNum[i]){
-        i++;
-        Console.WriteLine("-> Да");
-      }
-}
+// Console.Write("Введите искомое число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-     
-Console.WriteLine("-> Нет");
+// int ArrayCheck(int[] array){
+//      for (int i = 0; i < ArrayNum.Length; i++)
+//      {
+//         if(ArrayNum[i] == num) return 1;
+//      }
 
-
-
-      
-
-        
+//      return 0;
+// }   
    
-   
+// if(ArrayCheck(ArrayNum) == 1) Console.Write("-> Да");
 
-
-
+// if(ArrayCheck(ArrayNum) == 0) Console.Write("-> Нет");
 
 
 

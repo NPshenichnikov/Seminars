@@ -43,9 +43,26 @@
 
 //  Задача 29: Напишите программу,которая задаёт массив из 8 элементов и выводит их на экран.
 
-// int [] array = {41,0,5,8,3,12,23,7};
-// ShowArray (array[7]);
 
 
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for(int i = 0; i < size; i++){
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// int[] MyArray = CreateRandomArray(8, -20, 21);
+
+// void ShowArray(int[] array){
+    
+//     for(int i = 0; i < array.Length; i++){
+//         Console.Write(array[i] + " ");
+//     }
+// }
+
+// ShowArray(MyArray);
 
 
