@@ -153,7 +153,7 @@
 // {
 //     for (int i = 0; i < MyArray.Length; i++)
 //     {
-//        if(MyArray[i] > 9 && MyArray[i] < 99) sum = sum + 1;
+//        if(MyArray[i] > 9 && MyArray[i] < 100) sum = sum + 1;
 
 //     }
 // }
