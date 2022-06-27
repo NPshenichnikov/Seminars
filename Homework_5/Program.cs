@@ -160,3 +160,55 @@
 
 // ArrayCheck(MyArray);
 // Console.WriteLine(" -> " + sum);
+
+
+//  2.Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д. Результат запишите в новом массиве.
+
+// int[] CreateRandomArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// int[] MyArray = CreateRandomArray(8, 1, 10);
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+// }
+
+// ShowArray(MyArray); 
+ 
+// Console.Write("-> ");
+
+// int size = MyArray.Length;
+// int result = 0;
+// int j = MyArray.Length - 1;
+// int i = 0;
+// int n = size / 2;
+
+// if(size % 2 == 0){
+//     while(i < size / 2 + 1  && size / 2 - 1 < j){
+//          result = MyArray[i] * MyArray[j];
+//          Console.Write(result + " ");
+//          i++;
+//          j--;
+//     }
+// }
+
+// else{
+//      while(i < size / 2  && size / 2 < j){
+//          result = MyArray[i] * MyArray[j];
+//          Console.Write(result + " ");
+//          i++;
+//          j--;
+//     }
+//     if(size % 2 != 0) Console.Write(MyArray[n]);
+// }
