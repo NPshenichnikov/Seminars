@@ -174,7 +174,7 @@
 //     return array;
 // }
 
-// int[] MyArray = CreateRandomArray(8, 1, 10);
+// int[] MyArray = CreateRandomArray(4, 1, 10);
 
 // void ShowArray(int[] array)
 // {
@@ -192,23 +192,21 @@
 // int result = 0;
 // int j = MyArray.Length - 1;
 // int i = 0;
-// int n = size / 2;
 
-// if(size % 2 == 0){
-//     while(i < size / 2 + 1  && size / 2 - 1 < j){
-//          result = MyArray[i] * MyArray[j];
-//          Console.Write(result + " ");
-//          i++;
-//          j--;
-//     }
+// while(i < size / 2 && size / 2 < j){
+//     result = MyArray[i] * MyArray[j];
+//     Console.Write(result + " ");
+//     i++;
+//     j--;
 // }
-
+    
+// if(size % 2 == 0) Console.Write(MyArray[size / 2 - 1] * MyArray[j]);
+    
 // else{
-//      while(i < size / 2  && size / 2 < j){
-//          result = MyArray[i] * MyArray[j];
-//          Console.Write(result + " ");
-//          i++;
-//          j--;
-//     }
-//     if(size % 2 != 0) Console.Write(MyArray[n]);
+//     Console.Write(MyArray[size / 2]); 
 // }
+
+
+   
+   
+
