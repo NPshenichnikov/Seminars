@@ -32,15 +32,97 @@
 Console.Write("Введите целое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-while(num  >= 2){
-    if(num % 2 == 0) Console.Write(0 + " ");
+int res = 0;
+int i = 0;
+int[] MyArray = new int[res];
+
+while(num  >= 1){
+    if(num % 2 != 0){
+       MyArray[i] = 0;
+    }   
+        
     else{
-        Console.Write(1 + " ");
+       MyArray[i] = 1;
     }
     num = num / 2;
-    if(num == 3) Console.Write(1 + " " + 1);
-    if(num == 1) Console.Write(1 + " ");
+    res++;
+    i++;
 }
 
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
+
+ShowArray(MyArray);
+
+// void SwapArray(int[] array){
+//     int buf = 0;
+
+//     for (int i = 0; i < array.Length / 2; i++)
+//     {
+//         buf = array[i];
+//         array[i] = array [array.Length - i - 1];
+//         array[array.Length - i - 1] = buf; 
+//     }
+    
+//     // ShowArray(array);
+// }
+
+// Console.WriteLine();
+
+// SwapArray(MyArray);
+
+
+
+
+
+// //  Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+
+// Console.WriteLine("Введите значение b1: ");
+// double x = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите значение k1: ");
+// double x = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите значение b2: ");
+// double x = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите значение k2: ");
+// double x = Convert.ToInt32(Console.ReadLine());
+
+// if(k1 * x + b1 == k2 * x + b2){
+//     Console.WriteLine("Прямые совпадают")
+// }
+
+// if()
+
+
+
+
+//  Задача 44: Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
+
+// Console.Write("Введите число N: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// // if(num >= 2)
+// // Console.Write(0 + " " + 1);
+
+// int res1 = 0;
+// int res2 = 0;
+// int sum = 0;
+// int i = 0;
+
+// while(i < num){
+//     sum = sum1 + sum2;
+//     Console.Write(sum + " ");
+//     sum = sum + 2 * sum;
+//     i++;
+
+
+// }
 
 
