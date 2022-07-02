@@ -1,4 +1,4 @@
-﻿//   1
+﻿//   1. Задайте двумерный массив размером m x n,заполненный случайными целыми числами. 
 
 // int[,] CreateRandomArray(int m, int n, int min, int max)
 // {
@@ -17,7 +17,7 @@
 
 
 
-// void ShowArray(int[] array)
+// void ShowArray(int[,] array)
 // {
 
 //     for (int i = 0; i < array.GetLength(0); i++)
@@ -31,16 +31,22 @@
 
 // }
 
-// Console.WriteLine("Введите число столбцов: ");
+// Console.Write("Введите число строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите min число: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите max число: ");
+// int max = Convert.ToInt32(Console.ReadLine());
 
 
-
-// int[,] myArray = CreateRandomArray(3, 4, 1, 10);
+// int[,] myArray = CreateRandomArray(rows, columns, min, max);
 
 // ShowArray(myArray);
 
 
-//  Задайте двумерный массив размера m на n, каждый элемент в массиве находится по формуле: Aₘₙ = m+n. Выведите полученный массив на экран.
+//  2. Задайте двумерный массив размера m на n, каждый элемент в массиве находится по формуле: Aₘₙ = m+n. Выведите полученный массив на экран.
 
 // int[,] CreateArray(int m, int n)
 // {
@@ -81,7 +87,7 @@
 // ShowArray(myArray);
 
 
-//  Задайте двумерный массив. Найдите элементы, у которых оба индекса чётные, и замените эти элементы на их квадраты.
+//  3. Задайте двумерный массив. Найдите элементы, у которых оба индекса чётные, и замените эти элементы на их квадраты.
 
 // int[,] CreateRandomArray(int m, int n, int min, int max)
 // {
@@ -144,7 +150,7 @@
 // ShowArray(myArray);
 
 
-//  Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
+//  4. Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
 
 // int[,] CreateRandomArray(int m, int n, int min, int max)
 // {

@@ -1,128 +1,100 @@
 ﻿//  Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
 
-// Console.WriteLine("Введите числа через запятую: " +  { ;}; );
-// int[] array = {3,54,767,3,5,65,};
+// Console.Write("Введите элементы(через пробел): ");
+// int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+// int count = 0;
 
-// int[] CreateArray(int size)
+// for (int i = 0; i < arr.Length; i++)
 // {
-//     int[] array = new int[size];
-//     for(int i = 0; i < size; i++)
+//     if (arr[i] > 0)
 //     {
-//         Console.Write("Input " + i + " element: ");
-//         array[i] = Convert.ToInt32(Console.ReadLine());
-//     }
-//     return array;
-// }
-
-// void ShowArray(int[] array)
-// {
-//     for(int i = 0; i < array.Length; i++){
-//         Console.Write(array[i] + " ");
+//         count++;
 //     }
 // }
 
-// int[] MyArray = CreateArray(5);
-
-// ShowArray(MyArray);
+// Console.WriteLine($"Кол-во элементов > 0: {count}");
 
 
 //  Задача 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 
-Console.Write("Введите целое число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите целое число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-int res = 0;
-int i = 0;
-int[] MyArray = new int[res];
+// int count = 0;
 
-while(num  >= 1){
-    if(num % 2 != 0){
-       MyArray[i] = 0;
-    }   
-        
-    else{
-       MyArray[i] = 1;
-    }
-    num = num / 2;
-    res++;
-    i++;
-}
-
-void ShowArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-}
-
-ShowArray(MyArray);
-
-// void SwapArray(int[] array){
-//     int buf = 0;
-
-//     for (int i = 0; i < array.Length / 2; i++)
-//     {
-//         buf = array[i];
-//         array[i] = array [array.Length - i - 1];
-//         array[array.Length - i - 1] = buf; 
-//     }
-    
-//     // ShowArray(array);
+// while (num >= 1)
+// {
+//     count++;
+//     num = num / 2;
 // }
 
-// Console.WriteLine();
+// int[] CreateRandomArray(int count);
+// {
+//     int[] array = new int[count];
+//     for (int i = 0; i < count; i++)
+//     {
+//         while (num >= 1)
+//         {
+//             if (num % 2 != 0)
+//             {
+//                 array[i] = 1;
+//             }
 
-// SwapArray(MyArray);
+//             else
+//             {
+//                 array[i] = 0;
+//             }
+//             num = num / 2;
 
-
-
+//         }
+//     }
+//     return array;
+// }
+// CreateRandomArray(count);
 
 
 // //  Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 
-// Console.WriteLine("Введите значение b1: ");
-// double x = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите k1: ");
+// double k1 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите b1: ");
+// double b1 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите k2: ");
+// double k2 = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите b2: ");
+// double b2 = Convert.ToDouble(Console.ReadLine());
 
-// Console.WriteLine("Введите значение k1: ");
-// double x = Convert.ToInt32(Console.ReadLine());
+// // Так как,по условию значения (Y) функций совпадают,то:
+// // k1 * x + b1 = k2 * x + b2
+// // k1 * x - k2 * x = b2 - b1
+// // x * (k1 - k2) = b2 - b1
+// // x = (b2 - b1) / (k1 - k2)
 
-// Console.WriteLine("Введите значение b2: ");
-// double x = Convert.ToInt32(Console.ReadLine());
+// double x = (b2 - b1) / (k1 - k2);
+// double y = k1 * x + b1;
 
-// Console.WriteLine("Введите значение k2: ");
-// double x = Convert.ToInt32(Console.ReadLine());
+// x = Math.Round(x, 2);
+// y = Math.Round(y, 2);
 
-// if(k1 * x + b1 == k2 * x + b2){
-//     Console.WriteLine("Прямые совпадают")
-// }
-
-// if()
-
+// Console.WriteLine($"Пересечение в точке: ({x};{y})");
 
 
 
 //  Задача 44: Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
 
-// Console.Write("Введите число N: ");
-// int num = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число N: ");
+int num = Convert.ToInt32(Console.ReadLine());
 
-// // if(num >= 2)
-// // Console.Write(0 + " " + 1);
+if(num >= 2)
+Console.Write(0 + " " + 1 + " ");
 
-// int res1 = 0;
-// int res2 = 0;
-// int sum = 0;
-// int i = 0;
+int sum = 1;
+int count = 2;
 
-// while(i < num){
-//     sum = sum1 + sum2;
-//     Console.Write(sum + " ");
-//     sum = sum + 2 * sum;
-//     i++;
-
-
-// }
-
+while(num > count){
+    Console.Write(sum + " ");
+    sum = sum + sum;
+    count++;
+}
 

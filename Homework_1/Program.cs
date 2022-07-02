@@ -35,9 +35,8 @@
 
 // Console.WriteLine("input number");
 // int num = Convert.ToInt32(Console.ReadLine());
-// int result = num % 2;
 
-// if(result == 0){
+// if(num % 2 == 0){
 //     Console.WriteLine("This number is even");
 // }
 // else{
