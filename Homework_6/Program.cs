@@ -1,8 +1,9 @@
 ﻿//  Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
 
-// Console.Write("Введите элементы(через пробел): ");
-// int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+// Console.Write("Введите элементы(через пробел): "); 
+// int[] arr = Array.ConvertAll(Console.ReadLine().Split(),int.Parse);
+
 // int count = 0;
 
 // for (int i = 0; i < arr.Length; i++)
@@ -13,45 +14,7 @@
 //     }
 // }
 
-// Console.WriteLine($"Кол-во элементов > 0: {count}");
-
-
-//  Задача 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
-
-// Console.Write("Введите целое число: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-
-// int count = 0;
-
-// while (num >= 1)
-// {
-//     count++;
-//     num = num / 2;
-// }
-
-// int[] CreateRandomArray(int count);
-// {
-//     int[] array = new int[count];
-//     for (int i = 0; i < count; i++)
-//     {
-//         while (num >= 1)
-//         {
-//             if (num % 2 != 0)
-//             {
-//                 array[i] = 1;
-//             }
-
-//             else
-//             {
-//                 array[i] = 0;
-//             }
-//             num = num / 2;
-
-//         }
-//     }
-//     return array;
-// }
-// CreateRandomArray(count);
+// Console.WriteLine($"Кол-во элементов больше 0  => {count}");
 
 
 // //  Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
@@ -77,45 +40,40 @@
 // x = Math.Round(x, 2);
 // y = Math.Round(y, 2);
 
-// Console.WriteLine($"Пересечение в точке: ({x};{y})");
+// if(k1 * x + b1 == k2 * x + b2) Console.WriteLine($"Пересечение прямых в точке: ({x};{y})");
 
+// else Console.WriteLine("Эти прямые паралельны или совпадают");
 
 
 //  Задача 44: Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
 
-Console.Write("Введите число N: ");
-int num = Convert.ToInt32(Console.ReadLine());
-
-if(num >= 2)
-Console.Write(0 + " " + 1 + " ");
-
-int count = 2;
-int sum = 1;
-int sum1 = 0;
-int sum2 = 0;
-int sum3 = 0;
-int sum4 = 0;
-int sum5 = 0;
-int sum6 = 0;
-
-while(num >= count){
-    Console.Write(sum + " "); 
-    count++;
-    sum2 = sum + sum + 1;
-    Console.Write(sum + " ");
-    count++;
-    sum3 = sum1 + sum2  ;
-    Console.Write(sum + " ");
-    count++;
-    sum4 = sum2 + sum3;
-    Console.Write(sum + " ");
-    count++;
-    sum5 = sum3 + sum4;
-    Console.Write(sum + " ");
-    count++;
-    sum6 = sum4 + sum5;
-
-}
+// Console.Write("Введите целое число N: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
 
 
+// if(num < 1) Console.Write("Введите корректное число");
+
+
+// if(num == 1)
+// Console.Write("Число Фибоначчи: " + 0 + " ");
+// if(num == 2)
+// Console.Write("Число Фибоначчи: " + 0 + " " + 1 + " ");
+
+// if(num >= 3){
+
+// Console.Write("Число Фибоначчи: ");
+// Console.Write(0 + " " + 1 + " " + 1 + " "); 
+
+// }
+
+// int sum = 1;
+// int sum2 = 1;
+
+// for (int i = 0; i < num - 3; i++) {
+   
+//    sum = sum + sum2;
+//    sum2 = sum - sum2;
+   
+// Console.Write(sum + " ");
+// }
