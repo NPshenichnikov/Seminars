@@ -50,30 +50,30 @@
 // Console.Write("Введите целое число N: ");
 // int num = Convert.ToInt32(Console.ReadLine());
 
+// if (num < 1) Console.Write("Введите корректное число");
 
+// if (num == 1)
+//     Console.Write("Число Фибоначчи: " + 0 + " ");
 
-// if(num < 1) Console.Write("Введите корректное число");
+// if (num == 2)
+//     Console.Write("Число Фибоначчи: " + 0 + " " + 1 + " ");
 
+// if (num >= 3)
+// {
 
-// if(num == 1)
-// Console.Write("Число Фибоначчи: " + 0 + " ");
-// if(num == 2)
-// Console.Write("Число Фибоначчи: " + 0 + " " + 1 + " ");
-
-// if(num >= 3){
-
-// Console.Write("Число Фибоначчи: ");
-// Console.Write(0 + " " + 1 + " " + 1 + " "); 
+//     Console.Write("Число Фибоначчи: ");
+//     Console.Write(0 + " " + 1 + " " + 1 + " ");
 
 // }
 
 // int sum = 1;
 // int sum2 = 1;
 
-// for (int i = 0; i < num - 3; i++) {
-   
-//    sum = sum + sum2;
-//    sum2 = sum - sum2;
-   
-// Console.Write(sum + " ");
+// for (int i = 0; i < num - 3; i++)
+// {
+
+//     sum = sum + sum2;
+//     sum2 = sum - sum2;
+
+//     Console.Write(sum + " ");
 // }
