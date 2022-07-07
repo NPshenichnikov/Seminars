@@ -15,8 +15,6 @@
 
 // }
 
-
-
 // void PrintArray(double[,] array)
 // {
 
@@ -148,8 +146,6 @@
 //         Console.WriteLine();
 //    }
 // }
-
-
 
 // double[] GetResultArray(int[,] inArray)
 
